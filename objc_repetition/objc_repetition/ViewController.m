@@ -76,6 +76,9 @@
     NSNumber *tolv = [[NSNumber alloc] initWithInt:12];
     NSArray *siffor = @[@(12), @(23), @(34)];
     
+    NSMutableArray *mutableSiffror1 = [siffor mutableCopy];
+    NSMutableArray *mutableSiffror2 = [[NSMutableArray alloc] initWithArray:siffor];
+    
     NSMutableArray *randomPersoner = [NSMutableArray new];
     for (int i=0; i<10; i++) {
         Person *pp = [Person randomPerson];
